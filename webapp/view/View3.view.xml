@@ -1,0 +1,36 @@
+<mvc:View controllerName="dev1.controller.View3"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="Welcome to page3" class="myBackgroundImg">
+       <content >
+       <Text text="Welcome To Page3" class="sapUiSmallMargin sapMH3FontSize" width="100%" textAlign="Center" ></Text>
+
+      
+       <FlexBox justifyContent="Center" alignItems="Center" height="100%">
+       
+       <VBox >
+        
+         <Label text="Username" class="myTextColor"></Label>
+         <Input placeholder="Enter your Username" width="400px"></Input>
+         <Label text="Password" class="myTextColor"></Label>
+         <Input placeholder="Enter your Password" type="Password" width="400px"></Input>
+         <Button text="Login" type="Emphasized" width="400px"></Button>
+       
+       </VBox>
+       
+       </FlexBox>
+       
+      
+
+       </content>
+
+       <footer>
+            <Bar>
+                <contentRight>
+                <Button id="idBtnSub2" text="Goto Homepage" type="Emphasized" press="onPress4"></Button>
+                </contentRight>
+            </Bar>
+       </footer>
+    </Page>
+   
+</mvc:View>

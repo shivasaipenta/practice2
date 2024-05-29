@@ -1,0 +1,11 @@
+.myTextColor{
+    color:red;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.myBackgroundImg{
+    background-image: url('../images/sapimage.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

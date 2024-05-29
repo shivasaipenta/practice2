@@ -1,0 +1,71 @@
+<mvc:View xmlns:core="sap.ui.core" controllerName="dev1.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:f="sap.ui.layout.form">
+    <Page id="page" title="Welcome to page2">
+       <content>
+       <Text text="Welcome to Layouts Page" class="sapUiSmallMargin sapMH3FontSize" width="100%" textAlign="Center" ></Text>
+
+       <VBox >
+       <Button type="Default" text="BUTTON1 VBOX"></Button>
+       <Button type="Default" text="BUTTON2 VBOX"></Button>
+       </VBox>
+       
+       <HBox >
+         <Button type="Default" text="BUTTON1 HBOX"></Button>
+       <Button type="Default" text="BUTTON2 HBOX"></Button>
+       </HBox>
+
+        <FlexBox justifyContent="End">
+        
+        <Button type="Default" text="BUTTON Flexbox"></Button>
+
+        </FlexBox>
+
+         <FlexBox justifyContent="Center" alignContent="Center" height="100%">
+        
+        <Button type="Default" text="BUTTON Flexbox Center"></Button>
+
+        </FlexBox>
+
+        <f:SimpleForm title="Employee Info" editable="true" layout="ResponsiveGridLayout" labelSpanL="4" labelSpanM="4" emptySpanL="4" emptySpanM="4" >
+        <f:content>
+         <Label text="Select the relationships"></Label>
+          <Select items="{/aRelations}">
+          <core:Item text="{relation}"></core:Item>
+          </Select>
+
+          <Label text="Select the relationships with combobox"></Label>
+          <ComboBox items="{/aRelations}">
+          <core:Item text="{relation}"></core:Item>
+          </ComboBox>
+
+          <Label text="Select the relationships with Multicombobox"></Label>
+          <MultiComboBox items="{/aLanguages}">
+          <core:Item text="{language}"></core:Item>
+          </MultiComboBox>
+
+          <Label text="Select the Gender"></Label>
+          <RadioButtonGroup buttons="{/aGender}">
+          <RadioButton text="{gender}"></RadioButton>
+          </RadioButtonGroup>
+        
+        </f:content>
+        
+        </f:SimpleForm>
+
+
+
+
+       </content>
+
+       <footer>
+            <Bar>
+                <contentRight>
+                <Button id="idBtnSub2" text="Previous Page" type="Back" press="onPress2"></Button>
+                <Button id="idBtnPage3" text="Goto page3" type="Emphasized" press="onPress3"></Button>
+                </contentRight>
+            </Bar>
+       </footer>
+    </Page>
+   
+</mvc:View>

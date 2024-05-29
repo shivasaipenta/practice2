@@ -1,0 +1,22 @@
+<mvc:View controllerName="dev1.controller.ValueHelp"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:f="sap.ui.layout.form"  xmlns:core="sap.ui.core">
+    <Page id="ValueHelp" title="Welcome to simpleform with valuehelp" navButtonPress="onPress9" showNavButton="true" >
+       <content >
+        <f:SimpleForm editable="true" layout="ResponsiveGridLayout" title="Employee Data" labelSpanL="4" labelSpanM="4" emptySpanL="4" emptySpanM="4" >
+            <f:content>
+                <!-- <core:Title text="Basic Information"></core:Title> -->
+               
+                <Label text="Employee Id" ></Label>
+                <Input id="EmpId" showValueHelp="true" valueHelpRequest="onValueHelp"></Input>
+              
+                     
+            </f:content>
+        
+        </f:SimpleForm>
+        
+       </content>
+
+      
+    </Page>
+</mvc:View>

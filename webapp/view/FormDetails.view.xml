@@ -1,0 +1,39 @@
+<mvc:View controllerName="dev1.controller.FormDetails"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:f="sap.ui.layout.form"  xmlns:core="sap.ui.core">
+    <Page id="page1" title="Welcome to simpleform" navButtonPress="onPress9" showNavButton="true" >
+       <content >
+        <f:SimpleForm editable="true" layout="ResponsiveGridLayout" title="Employee Data" labelSpanL="4" labelSpanM="4" emptySpanL="4" emptySpanM="4" >
+            <f:content>
+                <!-- <core:Title text="Basic Information"></core:Title> -->
+               
+                <Label text="Employee Id" ></Label>
+                <Text  id="idTxtEmpId"></Text>
+                 <Label text="Employee Name" ></Label>
+                <Text id="idTxtEmpName" maxLength="20" ></Text>
+                <Label text="Employee Designation" ></Label>
+                <Text id="idTxtEmpDesg" ></Text>
+                 <!-- <core:Title text="Basic Information2"></core:Title> -->
+                 <Label text="Employee Skill" ></Label>
+                <Text id="idTxtEmpSkill" ></Text>
+                <Label text="Employee Email" ></Label>
+                <Text id="idTxtEmpEmail"></Text>  
+                <Label text="Employee Phone" ></Label>
+                <Text id="idTxtEmpPhone"></Text>       
+    
+                     
+            </f:content>
+        
+        </f:SimpleForm>
+       </content>
+
+       <footer>
+            <Bar>
+                <contentRight>
+                 <!-- <Button id="idBtnSubmit" text="Submit" type="Attention" press="onSubmit"></Button> -->
+                 <Button id="idBtnForm" text="Goto SimpleForm" type="Back" press="onPress9"></Button>
+                </contentRight>
+            </Bar>
+       </footer>
+    </Page>
+</mvc:View>

@@ -1,0 +1,28 @@
+<mvc:View controllerName="dev1.controller.List2"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:f="sap.ui.layout.form"  xmlns:core="sap.ui.core">
+    <Page id="page1" title="Welcome to simpleform" navButtonPress="onBack"  showNavButton="true" >
+       <content >
+        <f:SimpleForm editable="true" layout="ResponsiveGridLayout" title="Employee Data" labelSpanL="4" labelSpanM="4" emptySpanL="4" emptySpanM="4" >
+            <f:content>
+            
+                <Label text="Employee Id" ></Label>
+                <Text  id="empid" text="empid"> t</Text>
+                 <Label text="Employee Name" ></Label>
+                <!-- <Text id="{empName}" maxLength="20" ></Text> -->
+                <Label text="Employee Designation" ></Label>
+                <!-- <Text id="{empDesig}" ></Text>           -->
+                 <Label text="Employee Skill" ></Label>
+                <!-- <Text id="{empSkill}" ></Text> -->
+                <Label text="Employee Email" ></Label>
+                <!-- <Text id="{empEmail}"></Text>   -->
+                <Label text="Employee Location" ></Label>
+                <!-- <Text id="{empLoc}"></Text>        -->
+                        
+            </f:content>
+        
+        </f:SimpleForm>
+       </content>
+
+    </Page>
+</mvc:View>

@@ -1,0 +1,34 @@
+<mvc:View controllerName="dev1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page1" title="My Project" >
+       <content >
+       <Text id="idWelcome" text="Welcome to SAP UI5" class="sapUiSmallMarginTop sapMH3FontSize" width="100%" textAlign="Center" ></Text>
+       <Label id="idLbl" text="Enter your name" required="true" design="Bold" class="sapUiSmallMargin"  ></Label>
+       <Input id="idInpName" placeholder="Enter your name" width="30%" value="" class="sapUiSmallMargin"></Input>
+
+        <Label id="idLbl2" text="Enter Alignment" required="true" design="Bold" class="sapUiSmallMargin"  ></Label>
+        <Input id="idInpName2" placeholder="Enter Alignment with starting letter in capital" width="30%" value="" class="sapUiSmallMargin"></Input>
+
+       <Button id="idNameChg" type="Default" text="submit" class="sapUiSmallMargin" press="onNameChange"></Button>
+
+       </content>
+
+       <footer>
+            <Bar>
+                <contentRight>
+                <Button id="idBtnTable" text="Table" type="Accept" press="onPressTable"></Button>
+                <Button id="idBtnList" text="List" type="Emphasized" press="onPressList"></Button>
+                 <Button id="idBtnFormBinding" text="Form using binding" type="Success" press="onPressFormBinding"></Button>
+                 <Button id="idBtnObj" text="Object Header" type="Critical" press="onPressObj"></Button>
+                 <Button id="idBtnValueHelp" text="ValueHelp" type="Emphasized" press="onPressValueHelp"></Button>
+                 <Button id="idBtnFrm" text="SIMPLE FORM" type="Success" press="onPressForm"></Button>
+                 <Button id="idBtnGrid" text="GRID LAYOUT" type="Accept" press="onPressGrid"></Button>
+                 <Button id="idBtnHide" text="Hide" type="Attention" press="onHideShow"></Button>
+                 <Button id="idBtnSub" text="Next Page" type="Emphasized" press="onPress"></Button>
+                  
+                </contentRight>
+            </Bar>
+       </footer>
+    </Page>
+</mvc:View>

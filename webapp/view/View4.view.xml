@@ -1,0 +1,190 @@
+<mvc:View controllerName="dev1.controller.View4"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:l="sap.ui.layout" >
+    <Page id="page1" title="Welcome to Grid Layout" >
+       <content >
+
+    <Panel headerText="Employee Details" >
+    
+    <l:Grid  vSpacing="1">
+            <l:content>
+                    <Label text="Employee Id">
+                        <layoutData>
+                        <l:GridData span="L6 M6" ></l:GridData>
+                          </layoutData> 
+                    </Label>
+
+                    <Input>
+                        <layoutData>
+                        <l:GridData span="L6 M6" ></l:GridData>
+                        </layoutData> 
+                    </Input>      
+             </l:content>
+        </l:Grid>
+
+        <l:Grid >
+            <l:content>
+                    <Label text="Employee Name">
+                        <layoutData>
+                        <l:GridData span="L6 M6" ></l:GridData>
+                          </layoutData> 
+                    </Label>
+
+                    <Input>
+                        <layoutData>
+                        <l:GridData span="L6 M6" ></l:GridData>
+                        </layoutData> 
+                    </Input>      
+             </l:content>
+        </l:Grid>
+
+        <l:Grid >
+            <l:content>
+                    <Label text="Employee Gender">
+                        <layoutData>
+                        <l:GridData span="L6 M6" ></l:GridData>
+                          </layoutData> 
+                    </Label>
+
+                    <Input>
+                        <layoutData>
+                        <l:GridData span="L6 M6" ></l:GridData>
+                        </layoutData> 
+                    </Input>      
+             </l:content>
+        </l:Grid>
+
+        <l:Grid >
+            <l:content>
+                    <Label text="Employee Age">
+                        <layoutData>
+                        <l:GridData span="L6 M6" ></l:GridData>
+                          </layoutData> 
+                    </Label>
+
+                    <Input>
+                        <layoutData>
+                        <l:GridData span="L6 M6" ></l:GridData>
+                        </layoutData> 
+                    </Input>      
+             </l:content>
+        </l:Grid>
+
+
+        <l:Grid >
+            <l:content>
+                    <Label text="Employee Designation">
+                        <layoutData>
+                        <l:GridData span="L6 M6" ></l:GridData>
+                          </layoutData> 
+                    </Label>
+
+                    <Input>
+                        <layoutData>
+                        <l:GridData span="L6 M6" ></l:GridData>
+                        </layoutData> 
+                    </Input>      
+             </l:content>
+        </l:Grid>
+
+    </Panel>
+
+
+       <Panel headerText="Employee Details in 4columns" >
+    
+    <l:Grid  vSpacing="1">
+            <l:content>
+                    <Label text="Employee Id">
+                        <layoutData>
+                        <l:GridData span="L3 M3" ></l:GridData>
+                          </layoutData> 
+                    </Label>
+
+                    <Input>
+                        <layoutData>
+                        <l:GridData span="L3 M3" ></l:GridData>
+                        </layoutData> 
+                    </Input>      
+             </l:content>
+        </l:Grid>
+
+        <l:Grid >
+            <l:content>
+                    <Label text="Employee Name">
+                        <layoutData>
+                        <l:GridData span="L3 M3" ></l:GridData>
+                          </layoutData> 
+                    </Label>
+
+                    <Input>
+                        <layoutData>
+                        <l:GridData span="L3 M3" ></l:GridData>
+                        </layoutData> 
+                    </Input>      
+             </l:content>
+        </l:Grid>
+
+        <l:Grid >
+            <l:content>
+                    <Label text="Employee Gender">
+                        <layoutData>
+                        <l:GridData span="L3 M3" ></l:GridData>
+                          </layoutData> 
+                    </Label>
+
+                    <Input>
+                        <layoutData>
+                        <l:GridData span="L3 M3" ></l:GridData>
+                        </layoutData> 
+                    </Input>      
+             </l:content>
+        </l:Grid>
+
+        <l:Grid >
+            <l:content>
+                    <Label text="Employee Age">
+                        <layoutData>
+                        <l:GridData span="L3 M3" ></l:GridData>
+                          </layoutData> 
+                    </Label>
+
+                    <Input>
+                        <layoutData>
+                        <l:GridData span="L3 M3" ></l:GridData>
+                        </layoutData> 
+                    </Input>      
+             </l:content>
+        </l:Grid>
+
+
+        <l:Grid >
+            <l:content>
+                    <Label text="Employee Designation">
+                        <layoutData>
+                        <l:GridData span="L3 M3" ></l:GridData>
+                          </layoutData> 
+                    </Label>
+
+                    <Input>
+                        <layoutData>
+                        <l:GridData span="L3 M3" ></l:GridData>
+                        </layoutData> 
+                    </Input>      
+             </l:content>
+        </l:Grid>
+        
+
+    </Panel>
+       
+        
+       </content>
+
+       <footer>
+            <Bar>
+                <contentRight>
+                 <Button id="idBtnGrid" text="Goto Homepage" type="Emphasized" press="onPress5"></Button>
+                </contentRight>
+            </Bar>
+       </footer>
+    </Page>
+</mvc:View>

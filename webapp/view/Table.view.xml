@@ -1,0 +1,63 @@
+<mvc:View controllerName="dev1.controller.Table"
+xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" displayBlock="true">
+<Page id="page" navButtonPress="onBack" showNavButton="true">
+
+   <Table id="tableEmp" items="{/aEmployees}"  mode="SingleSelectMaster" selectionChange="onSelcEmp">  
+    <headerToolbar>      
+          <Toolbar >
+                <Text text="Employee Details" class="sapMH3FontSize"></Text>
+                <ToolbarSpacer ></ToolbarSpacer>
+                <SearchField width="30%" liveChange="onSearchEmp" placeholder="Search employee name"></SearchField>
+                <Button icon="sap-icon://sort-ascending" press="onAsc"></Button>
+                <Button icon="sap-icon://sort-descending" press="onDesc"></Button>               
+        </Toolbar>
+    </headerToolbar>
+
+    <columns>
+        <Column >
+            <Text text="Employee Id"></Text>
+        </Column>
+        <Column >
+            <Text text="Employee Name"></Text>
+        </Column><Column >
+            <Text text="Employee Designation"></Text>
+        </Column><Column >
+            <Text text="Employee Skill"></Text>
+        </Column>
+        <Column >
+            <Text text="Employee Location"></Text>
+        </Column>
+        <Column >
+            <Text text="Employee Email"></Text>
+        </Column>
+        <Column >
+            <Text text=""></Text>
+        </Column>
+    </columns>
+    <items>
+        <ColumnListItem >
+            <cells>
+            <Text text="{empid}"></Text>
+            </cells>
+             <cells>
+            <Text text="{empName}"></Text>
+            </cells>
+             <cells>
+            <Text text="{empDesig}"></Text>
+            </cells>
+             <cells>
+            <Text text="{empSkill}"></Text>
+            </cells>
+             <cells>
+            <Text text="{empLoc}"></Text>
+            </cells>
+             <cells>
+            <Text text="{empEmail}"></Text>
+            </cells>
+        </ColumnListItem>
+    </items>  
+   </Table>
+
+</Page>
+</mvc:View>
+

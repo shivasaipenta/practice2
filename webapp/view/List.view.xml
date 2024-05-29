@@ -1,0 +1,30 @@
+<mvc:View controllerName="dev1.controller.List"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="li" title="List" showNavButton="true" navButtonPress="onBack">
+       <content >
+
+        <List id="listEmp" items="{/aEmployees}"  mode="SingleSelectMaster" selectionChange="onSelcEmp">
+            <headerToolbar>
+                <Toolbar >
+                <Text text="Employee Details" class="sapMH3FontSize"></Text>
+                <ToolbarSpacer ></ToolbarSpacer>
+                <SearchField width="30%" liveChange="onSearchEmp" placeholder="Search employee name"></SearchField>
+                <Button icon="sap-icon://sort-ascending" press="onAsc"></Button>
+                <Button icon="sap-icon://sort-descending" press="onDesc"></Button>
+                </Toolbar>
+            </headerToolbar>
+            <ObjectListItem title="{empName}" number="{empid}" numberUnit="{empDesig}">
+                <attributes>
+                    <ObjectAttribute title="Skill" text="{empSkill}"></ObjectAttribute>
+                    <ObjectAttribute title="Email" text="{empEmail}"></ObjectAttribute>
+                </attributes>
+                <firstStatus>
+                    <ObjectStatus text="{empLoc}" ></ObjectStatus>
+                </firstStatus>
+            </ObjectListItem>
+        </List>`
+
+       </content>         
+    </Page>
+</mvc:View>

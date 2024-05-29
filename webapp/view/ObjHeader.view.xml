@@ -1,0 +1,56 @@
+<mvc:View controllerName="dev1.controller.ObjHeader"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m" xmlns:f="sap.ui.layout.form"  xmlns:core="sap.ui.core">
+    <Page id="page1" title="Welcome to ObjectHeader" >
+       <content >
+        <ObjectHeader title="Washing Machine" number="30000" numberUnit="INR" backgroundDesign="Solid" >
+                <attributes>
+                    <ObjectAttribute  title="Material Id" text="MA01"></ObjectAttribute>
+                    <ObjectAttribute  title="Material Name" text="Samsung"></ObjectAttribute>
+                </attributes>
+                <statuses>
+                <ObjectStatus text="Approved"></ObjectStatus>
+                </statuses>
+        </ObjectHeader>
+
+        <IconTabBar >
+            <items>
+                <IconTabFilter icon="sap-icon://hint">
+                <f:SimpleForm editable="true" layout="ResponsiveGridLayout" title="Employee Data" labelSpanL="3" labelSpanM="3" emptySpanL="0" emptySpanM="0" >
+            <f:content>
+                <core:Title text="Basic Information"></core:Title>
+                <Label text="Employee Name"></Label>
+                <Input ></Input>
+                <Label text="Employee Id"></Label>
+                <Input ></Input>
+                <Label text="Employee Designation"></Label>
+                <Input ></Input>
+                 <core:Title text="Basic Information2"></core:Title>
+                <Label text="Employee Email"></Label>
+                <Input ></Input>
+                <Label text="Employee Skill"></Label>
+                <Input ></Input>
+                <Label text="Employee Company"></Label>
+                <Input ></Input>
+            </f:content>
+        
+        </f:SimpleForm>
+                </IconTabFilter>
+
+                <IconTabFilter icon="sap-icon://notes">
+                <Text text="Hello World"></Text>
+                </IconTabFilter>
+                
+            </items>
+        </IconTabBar>
+       </content>
+
+       <footer>
+            <Bar>
+                <contentRight>
+                 <Button id="idBtnObj2" text="Goto Homepage" type="Back" press="onPress7"></Button>
+                </contentRight>
+            </Bar>
+       </footer>
+    </Page>
+</mvc:View>
